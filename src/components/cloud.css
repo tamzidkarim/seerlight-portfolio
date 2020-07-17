@@ -1,0 +1,28 @@
+#right-cloud {
+  width: 12rem;
+  height: 5rem;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  fill: var(--cloud);
+  transition: fill ease-in-out 0.2s;
+}
+#left-cloud {
+  width: 10rem;
+  height: 5rem;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  fill: var(--cloud);
+  transition: fill ease-in-out 0.2s;
+}
+
+#middle-cloud {
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  left: 30%;
+  top: 2%;
+  fill: var(--cloud);
+  transition: fill ease-in-out 0.2s;
+}

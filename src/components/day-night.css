@@ -1,0 +1,22 @@
+.day-night {
+  position: absolute;
+  background: transparent;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: none;
+  border: none;
+}
+
+.day-night:active {
+  background: #000e80;
+  color: white;
+}
+
+#Capa_1 {
+  height: 2rem;
+  width: 2rem;
+}

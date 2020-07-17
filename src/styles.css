@@ -1,0 +1,80 @@
+:root {
+  --bg: linear-gradient(
+    180deg,
+    #acf0ff 25%,
+    #ff9dcc 40%,
+    #4f62b4 75%,
+    #5cacbe 100%
+  );
+  --cloud: white;
+  --bg-image: url("/day-bg.jpg");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+[data-mode="dark"] {
+  --bg: linear-gradient(180deg, #4f62b4 51.3%, #5cacbe 100%);
+  --cloud: #18618c;
+  --bg-image: url("/night-bg.jpg");
+}
+
+.App {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+}
+.App::before {
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: var(--bg);
+  transition: top 0.5s ease-in-out;
+}
+
+.App[data-mode="dark"]::before {
+  top: -100vh;
+}
+
+.day-night {
+  position: absolute;
+  background: transparent;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: none;
+  border: none;
+}
+
+.day-night:active {
+  background: #000e80;
+  color: white;
+}
+
+#Capa_1 {
+  height: 2rem;
+  width: 2rem;
+}
